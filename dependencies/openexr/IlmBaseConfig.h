@@ -1,0 +1,8 @@
+
+#undef HAVE_PTHREAD
+#undef HAVE_POSIX_SEMAPHORES
+
+#ifndef _WIN32
+	#undef HAVE_PTHREAD 1
+	#undef HAVE_POSIX_SEMAPHORES 1
+#endif
